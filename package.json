@@ -9,5 +9,7 @@
   "keywords": [],
   "author": "OpenFaaS Ltd",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "franc": "^5.0.0"
+  }
 }
