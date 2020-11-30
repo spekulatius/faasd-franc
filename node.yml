@@ -1,10 +1,9 @@
 version: 1.0
 provider:
   name: openfaas
-  gateway: http://127.0.0.1:8080
+  gateway: http://faas1:8080
 functions:
-  node:
+  franc:
     lang: node12
     handler: ./node
-    image: node:latest
-
+    image: spekulatius/faasd-franc:latest
