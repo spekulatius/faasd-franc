@@ -1,13 +1,19 @@
 {
-  "name": "openfaas-function",
+  "name": "faasd-franc",
   "version": "1.0.0",
-  "description": "OpenFaaS Function",
+  "description": "OpenFaaS franc Function",
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
   },
-  "keywords": [],
-  "author": "OpenFaaS Ltd",
+  "keywords": [
+    "franc",
+    "language detection",
+    "faasd",
+    "openfaas",
+    "faas"
+  ],
+  "author": "Peter Thaleikis",
   "license": "MIT",
   "dependencies": {
     "franc": "^5.0.0"
