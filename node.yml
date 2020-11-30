@@ -5,5 +5,5 @@ provider:
 functions:
   franc:
     lang: node12
-    handler: ./node
+    handler: ./
     image: spekulatius/faasd-franc:latest

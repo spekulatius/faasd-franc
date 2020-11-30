@@ -8,5 +8,6 @@
   },
   "keywords": [],
   "author": "OpenFaaS Ltd",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {}
 }
