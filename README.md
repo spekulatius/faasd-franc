@@ -16,4 +16,4 @@ On your running faasd instance you can install it using the UI:
 
 ![](screenshot.png)
 
-Alternatively,
+Alternatively, you can clone and build the code yourself.
