@@ -10,10 +10,28 @@ I wanted to build a super simple api endpoint to familiarize myself more with th
 
 The faasd function for franc is the result. It should work, but no guarantees.
 
-## Installation
+## Building Your Own Version
 
-On your running faasd instance you can install it using the UI:
+1. You can easily build your own version and host it on your faasd instance:
 
-![](screenshot.png)
+   ```bash
+   git clone git@github.com:spekulatius/faasd-franc.git && cd faasd-franc
+   ```
 
-Alternatively, you can clone and build the code yourself.
+2. Create the secret:
+
+   ```bash
+   echo $(head -c 16 /dev/urandom | shasum | cut -d "-" -f1) > token.txt
+   ```
+
+3. Store it on the server:
+
+   ```bash
+   faas-cli secret create private-api-token --from-file token.txt --gateway http://yourfaasd.somewhere.com:8080
+   ```
+
+4. Deploy as usual:
+
+   ```bash
+   faas-cli up -f ./node.yml --gateway http://yourfaasd.somewhere.com:8080
+   ```

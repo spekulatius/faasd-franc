@@ -4,6 +4,8 @@ provider:
   gateway: http://faas1:8080
 functions:
   franc:
+    secrets:
+    - private-api-token
     lang: node12
     handler: ./
     image: spekulatius/faasd-franc:latest

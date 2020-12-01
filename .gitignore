@@ -1,3 +1,4 @@
 template
 build
 node_modules/
+token.txt
