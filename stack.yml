@@ -1,7 +1,6 @@
 version: 1.0
 provider:
   name: openfaas
-  gateway: http://faas1:8080
 functions:
   franc:
     secrets:
