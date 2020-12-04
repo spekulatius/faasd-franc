@@ -5,7 +5,7 @@ provider:
 functions:
   franc:
     secrets:
-    - private-api-token
+      - private-api-token
     lang: node12
     handler: ./
     image: spekulatius/faasd-franc:latest
