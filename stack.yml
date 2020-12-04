@@ -2,7 +2,7 @@ version: 1.0
 provider:
   name: openfaas
 functions:
-  franc:
+  faasd-franc:
     secrets:
       - private-api-token
     lang: node12

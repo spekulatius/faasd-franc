@@ -49,8 +49,8 @@ jobs:
         name: Build and Push the OpenFaaS function
         uses: docker/build-push-action@v2
         with:
-          context: ./build/franc/
-          file: ./build/franc/Dockerfile
+          context: ./build/faasd-franc/
+          file: ./build/faasd-franc/Dockerfile
           push: true
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           tags: spekulatius/faasd-franc:latest-${{ steps.define_env.outputs.github-sha-short }}
