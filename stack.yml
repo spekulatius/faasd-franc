@@ -2,9 +2,9 @@ version: 1.0
 provider:
   name: openfaas
 functions:
-  faasd-franc:
+  franc:
     secrets:
       - franc-token
     lang: node12
-    handler: ./faasd-franc/
+    handler: ./franc
     image: spekulatius/faasd-franc:latest
