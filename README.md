@@ -27,7 +27,7 @@ The faasd function for franc is the result. It should work, but no guarantees.
 3. Store it on the server:
 
    ```bash
-   faas-cli secret create franc-api-token --from-file token.txt --gateway http://yourfaasd.somewhere.com:8080
+   faas-cli secret create franc-token --from-file token.txt --gateway http://yourfaasd.somewhere.com:8080
    ```
 
 4. Deploy as usual:

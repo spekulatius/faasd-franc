@@ -6,7 +6,7 @@ let franc = require('franc')
 
 module.exports = async (event, context) => {
   // Check the auth token
-  let secret = await fsPromises.readFile("/var/openfaas/secrets/franc-api-token", "utf8")
+  let secret = await fsPromises.readFile("/var/openfaas/secrets/franc-token", "utf8")
   let auth = event.headers["authorization"]
   if(!auth && auth != "Bearer: " + secret) {
     return context
