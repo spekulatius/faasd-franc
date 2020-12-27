@@ -21,7 +21,7 @@ module.exports = async (event, context) => {
     response.message = 'No query string provided'
   } else {
     response.status = 'Success'
-    response.result = franc.all(event.query.query)
+    response.result = franc.all(event.query.query).splice(0, 10)
   }
 
   return context
