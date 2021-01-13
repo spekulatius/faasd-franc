@@ -1,4 +1,4 @@
-# Faasd function for Franc
+# faasd function for Franc
 
 **This is part of [my personal exploring](https://github.com/spekulatius/hacks) and probably not production ready. Use at own risk!**
 
